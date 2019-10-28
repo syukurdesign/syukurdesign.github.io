@@ -1,8 +1,17 @@
+/* Navbar */
+
+.navbar-brand {
+    font: 25px Viga;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-.portfolio, .about, .contact, .service{
+.portfolio,
+.about,
+.contact,
+.service {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -14,13 +23,13 @@ html {
 }
 
 .jumbotron {
-    background-image: url('/syukurdesign/img/jumbotron7.jpg');
+    background-image: url('../img/jumbotron7.jpg');
     background-size: cover;
     height: 650px;
     margin-top: 50px;
 }
 
-.jumbotron .display-4{
+.jumbotron .display-4 {
     margin-top: 150px;
     margin-left: 520px;
     font-size: 42px;
@@ -28,18 +37,17 @@ html {
     font-weight: bold;
 }
 
-.jumbotron .lead{
+.jumbotron .lead {
     margin-left: 520px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 10);
-
 }
 
-.jumbotron hr{
+.jumbotron hr {
     margin-left: 520px;
     width: 600px;
 }
 
-.jumbotron .btn{
+.jumbotron .btn {
     margin-left: 520px;
     shadow: 1px 1px 1px rgba(0, 0, 0, 10);
 }
@@ -52,22 +60,35 @@ html {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
 }
 
-.card .display-4{
+.card .display-4 {
     font-size: 35px;
+    position: relative;
 }
 
-hr{
+hr {
     width: 100px;
     border-top: 3px solid #eaeaea;
     margin-top: -55px;
 }
 
-.col-md-3 img{
+.col-md-3 img {
     margin-left: 70px;
     margin-top: -20px;
 }
 
-.teknologi{
-    background-color: #cce3ff;
+.col-md-4 {
+    margin-top: 8%;
+    overflow: hidden;
+}
 
+.col-md-4 img {
+    transition: all 1.2s ease;
+}
+
+.col-md-4:hover img {
+    transform: scale(1.2);
+}
+
+.teknologi {
+    background-color: #cce3ff;
 }
