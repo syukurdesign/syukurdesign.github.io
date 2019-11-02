@@ -1,60 +1,136 @@
 /* Navbar */
 
 .navbar-brand {
-    font: 25px Viga;
+    font: 25px Raleway;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-.portfolio,
-.about,
-.contact,
-.service {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+body {
+    overflow: auto;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
+
+.offset:before {
+    height: 3.8rem;
+    margin-top: -3.8rem;
+    content: "";
+    display: block;
+}
+
+
+/*--- Navbar --*/
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, .6)!important;
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #1ebba3;
+}
+
+
+/*--- Slider --*/
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 38%;
+    text-transform: uppercase;
     width: 100%;
-    height: 160px;
+    right: 0;
+    left: 0;
 }
 
-.jumbotron {
-    background-image: url('../img/jumbotron7.jpg');
-    background-size: cover;
-    height: 650px;
-    margin-top: 50px;
+.carousel-caption h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
 }
 
-.jumbotron .display-4 {
-    margin-top: 150px;
-    margin-left: 520px;
-    font-size: 42px;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0);
+.carousel-caption h5 {
+    text-shadow: .1rem .1rem .8rem black;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+    color: #1ebba3;
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
-.jumbotron .lead {
-    margin-left: 520px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 10);
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1.9rem;
 }
 
-.jumbotron hr {
-    margin-left: 520px;
-    width: 600px;
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: #1ebba3;
+    margin: 0 auto 2rem;
 }
 
-.jumbotron .btn {
-    margin-left: 520px;
-    shadow: 1px 1px 1px rgba(0, 0, 0, 10);
+@media (max-width: 767px) {
+    .carousel-caption h1 {
+        font-size: 2.3rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .carousel-caption h3 {
+        font-size: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    .btn-lg {
+        font-size: 1rem;
+    }
+    .narrow h1 {
+        font-size: 1.5rem;
+    }
+    p.lead {
+        font-size: 2rem;
+    }
 }
 
 .card {
     width: 20rem;
-    margin-top: -120px;
+    margin-top: 5px;
     margin-left: 50px;
     border-radius: 12px;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
@@ -65,19 +141,12 @@ html {
     position: relative;
 }
 
-hr {
-    width: 100px;
-    border-top: 3px solid #eaeaea;
-    margin-top: -55px;
-}
-
 .col-md-3 img {
     margin-left: 70px;
     margin-top: -20px;
 }
 
 .col-md-4 {
-    margin-top: 8%;
     overflow: hidden;
 }
 
@@ -89,6 +158,35 @@ hr {
     transform: scale(1.2);
 }
 
-.teknologi {
-    background-color: #cce3ff;
+
+/*--- Contact --*/
+
+footer {
+    background-color: #40474e;
+    color: white;
+    padding: 2rem 0 3rem;
+    margin-top: 1rem;
+}
+
+footer img {
+    height: 3rem;
+    margin: 1.5rem 0;
+}
+
+footer a {
+    color: white;
+}
+
+footer svg.svg-inline--fa {
+    font-size: 1.9rem;
+    margin: 1.2rem .5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+    color: #1ebba3;
+}
+
+hr.socket {
+    border-top: .2rem solid #666b71;
+    width: 200%;
 }
