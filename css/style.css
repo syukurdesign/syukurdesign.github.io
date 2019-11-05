@@ -157,6 +157,14 @@ h3.heading {
     margin-top: -20px;
 }
 
+.col-md-4 img {
+    transition: all 1.2s ease;
+}
+
+.col-md-4:hover img {
+    transform: scale(1.2);
+}
+
 .col-md-2 img {
     transition: all 1.2s ease;
 }
