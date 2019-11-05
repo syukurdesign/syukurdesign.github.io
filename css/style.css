@@ -132,8 +132,19 @@ h3.heading {
     width: 20rem;
     margin-top: 5px;
     margin-left: 50px;
-    border-radius: 12px;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 0;
+    box-shadow: 0 3px 20px #3000ff;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+.card:hover {
+    background: #fff;
+    color: #3000ff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #00ff3c;
 }
 
 .card .display-4 {
