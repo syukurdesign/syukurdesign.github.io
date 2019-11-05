@@ -15,10 +15,6 @@ body {
     color: #505962;
 }
 
-.h3 {
-    color: #40474e;
-}
-
 .offset:before {
     height: 3.8rem;
     margin-top: -3.8rem;
